@@ -1,13 +1,18 @@
-import type { NextPage } from 'next'
-import SafeEnvironment from 'ui/components/feedback/SafeEnvironment/SafeEnvironment'
+import Head from 'next/head';
+import SafeEnvironment from 'ui/components/feedback/SafeEnvironment/SafeEnvironment';
+import PageTitle from 'ui/components/data-display/pageTitles/pageTitle';
+import { PageTitleContainer } from 'ui/components/data-display/pageTitles/pageTitle.style';
 
-
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <div >
       <SafeEnvironment/>
-    </div>
-  )
-}
+    
+        <PageTitle
 
-export default Home
+          title = {'Conhecendos os Profissionais'}
+          subtitle = {'Preencha seu endereço e veja todos os  profissionais perdo do seu local.'}
+        />
+    </div>
+  );
+}
