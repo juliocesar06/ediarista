@@ -1,6 +1,6 @@
 import {styled} from '@mui/material/styles';
 export const PageTitleContainer = styled('div')`
-    margin: 40px, 0;
+    margin: ${({theme})=> theme.spacing(5) + ' ' + 0};
     text-align : center; 
 `;
 export const PageTitleStyled = styled('h2')`
